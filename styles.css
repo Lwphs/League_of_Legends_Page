@@ -48,4 +48,15 @@
 .modalContent {
     display: flex;
     align-items: center;
+    gap: 5%;
+}
+
+.modalContent p {
+    width: 85%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
 }
