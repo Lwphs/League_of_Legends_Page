@@ -8,6 +8,26 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
+    <div class="cookieModal">
+      <div class="modalContent">
+        <p>
+          This website uses technologies such as cookies to enable essential
+          site functionality, as well as for analytics, personalization, and
+          targeted advertising. You can change your settings at any time or
+          accept the default settings. You can close this banner to continue
+          with only essential cookies. Privacy Notice
+        </p>
+        <div class="buttons">
+            <button id="acceptCookies">Accept</button>
+            <button id="rejectCookies">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="cookieMessage" class="hidden">
+      You have rejected cookies. Some features may not work properly.
+    </p>
     <section id="hero">
       <video autoplay muted loop id="myVideo">
         <source src="/assets/background.mp4" type="video/mp4" />
