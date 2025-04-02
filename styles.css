@@ -11,3 +11,11 @@
     justify-content: center;
 }
 
+#info {
+    height: 100vh;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
