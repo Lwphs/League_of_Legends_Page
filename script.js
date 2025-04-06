@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
         cookieModal.style.display = "flex";
         void cookieModal.offsetWidth;
         cookieModal.classList.add("show");
-    }, 1000);
+    }, 750);
 });
 
 acceptBtn.addEventListener("click", function () {

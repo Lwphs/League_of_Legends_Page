@@ -67,7 +67,6 @@
   opacity: 0;
   display: none;
   transition: opacity 0.5s ease;
-  /* El resto de tus estilos... */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -118,6 +117,7 @@
   left: 0;
   right: 0;
   background-color: rgb(0, 0, 0);
+  font-family: SpiegelSans, sans-serif;
   color: white;
   padding: 20px;
   border-top: 1px solid #ccc;
