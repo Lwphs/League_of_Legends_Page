@@ -51,7 +51,7 @@
     gap: 5%;
 }
 
-.modalContent p {
+#muchoTexto {
     width: 85%;
 }
 
@@ -59,4 +59,19 @@
     display: flex;
     flex-direction: column;
     width: 15%;
+}
+
+#cookieRejectMessage {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
