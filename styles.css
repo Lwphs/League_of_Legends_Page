@@ -186,13 +186,18 @@
   transition: 0.3s ease;
   border-bottom: 2px inset;
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
+  display: grid;
+  padding: 0 80px;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
 
 .off-screen-menu ul {
-  padding-top: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: center;
 }
 
