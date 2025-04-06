@@ -177,3 +177,10 @@
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
 }
 
+.off-screen-menu li {
+  list-style: none;
+  margin: 20px 0;
+  padding: 10px;
+  font-family: SpiegelSans, sans-serif;
+  font-size: 1.8rem;
+}
