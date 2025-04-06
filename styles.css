@@ -175,7 +175,7 @@
   cursor: pointer;
 }
 
-/* HAMBURGUER MENU */
+/* HAMBURGUER HEADER */
 .off-screen-menu {
   background-color: rgb(29, 29, 29);
   height: 75px;
@@ -196,6 +196,7 @@
 
 .off-screen-menu ul {
   display: flex;
+  gap: 50px;
   flex-direction: row;
   justify-content: left;
   align-items: center;
@@ -212,6 +213,15 @@
   text-decoration: none;
   color: var(--thertiary-color);
   font-family: SpiegelSans, sans-serif;
+}
+
+#signIn {
+  justify-self: end;
+  border-radius: 100px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  background-color: var(--accent-color);
 }
 
 .off-screen-menu a:hover {
