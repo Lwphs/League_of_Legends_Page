@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: rgb(0, 0, 0);
-  --secondary-color: rgb(192, 151, 15);
+  --secondary-color: rgb(233, 188, 39);
   --thertiary-color: rgb(255, 255, 255);
   --accent-color: rgb(194, 23, 23);
 }
@@ -136,8 +136,8 @@
   height: 70px;
   padding: 20px;
   background-color: rgb(10, 10, 10);
-  border: 3px inset; /* keep border width */
-  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1; /* gradient direction + scale */
+  border: 3px inset;
+  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1; 
 }
 
 #toHell a:link {
@@ -150,10 +150,10 @@
 }
 
 #toHell:hover {
-  text-shadow: 0 0 5px #ffffff80;
-  box-shadow: 0 0 8px 0 #4d4d4d50;
+  text-shadow: 0 0 5px #fff384;
+  box-shadow: 0 0 12px 0 #ffd95de3;
   background: rgb(29, 29, 29);
-  transition: ease-in-out 0.5s;
-  transform: scale(1.01);
+  transition: ease-in-out 0.2s;
+  border-image: linear-gradient(to bottom, #fcdc9b, #c79948) 1; 
   cursor: pointer;
 }
