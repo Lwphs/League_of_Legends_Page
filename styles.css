@@ -96,6 +96,14 @@
   width: 75%;
 }
 
+#muchoTexto a:link {
+  color: white;
+}
+
+#muchoTexto a:visited {
+  color: white;
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
