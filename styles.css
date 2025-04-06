@@ -119,5 +119,7 @@
 
 .buttons button:hover {
   transition: ease-in-out 0.2s;
-  background-color: var(--secondary-color);
+  background-color: var(--thertiary-color);
+  color: var(--primary-color);
 }
+
