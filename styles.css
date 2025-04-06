@@ -187,6 +187,7 @@
   border-bottom: 2px inset;
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
   display: grid;
+  font-weight: 750;
   padding: 0 80px;
   grid-template-columns: 1fr 5fr 1fr;
   justify-content: space-evenly;
@@ -206,7 +207,7 @@
   list-style: none;
   padding: 15px;
   font-family: SpiegelSans, sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
 }
 
 .off-screen-menu a {
@@ -222,6 +223,8 @@
   height: 30px;
   width: 100px;
   background-color: var(--accent-color);
+  font-weight: 750;
+  color: white;
 }
 
 .off-screen-menu a:hover {
