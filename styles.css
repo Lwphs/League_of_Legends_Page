@@ -123,3 +123,17 @@
   color: var(--primary-color);
 }
 
+#toHell {
+    padding: 20px;
+    background-color: var(--secondary-color);
+  }
+  
+  #toHell a:link {
+    text-decoration: none;
+    color: var(--thertiary-color);
+  }
+  
+  #toHell a:visited {
+    color: var(--thertiary-color);
+  }
+  
