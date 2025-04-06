@@ -127,7 +127,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: SpiegelSans, sans-serif;
+  font-family: BeaufortforLOL, sans-serif;
+  letter-spacing: 1.5px;
   text-shadow: none;
   font-size: 1.2rem;
   width: 200px;
@@ -140,14 +141,15 @@
 
 #toHell a:link {
   text-decoration: none;
-  color: var(--thertiary-color);
+  color: white;
 }
 
 #toHell a:visited {
-  color: var(--thertiary-color);
+  color: white;
 }
 
 #toHell:hover {
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.5s;
+  transform: scale(1.01);
   cursor: pointer;
 }
