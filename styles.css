@@ -184,3 +184,15 @@
   font-family: SpiegelSans, sans-serif;
   font-size: 1.8rem;
 }
+
+.off-screen-menu a {
+  text-decoration: none;
+  color: var(--thertiary-color);
+  font-family: BeaufortforLOL, sans-serif;
+}
+
+.off-screen-menu.active {
+  left: 0;
+}
+
+
