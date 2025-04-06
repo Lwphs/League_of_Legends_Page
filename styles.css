@@ -124,13 +124,18 @@
 }
 
 #toHell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: SpiegelSans, sans-serif;
   text-shadow: none;
   font-size: 1.2rem;
   width: 200px;
   height: 70px;
   padding: 20px;
-  background-color: var(--secondary-color);
+  background-color: rgb(10, 10, 10);
+  border: 3px inset; /* keep border width */
+  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1; /* gradient direction + scale */
 }
 
 #toHell a:link {
@@ -143,6 +148,6 @@
 }
 
 #toHell:hover {
-  transform: scale(1.05);
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
