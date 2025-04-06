@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: rgb(0, 0, 0);
-  --secondary-color: rgb(233, 188, 39);
+  --secondary-color: rgb(236, 173, 0);
   --thertiary-color: rgb(255, 255, 255);
   --accent-color: rgb(194, 23, 23);
 }
@@ -131,7 +131,7 @@
   font-family: BeaufortforLOL, sans-serif;
   letter-spacing: 1.5px;
   text-shadow: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 200px;
   height: 70px;
   padding: 20px;
@@ -161,18 +161,18 @@
 /* HAMBURGUER MENU */
 .off-screen-menu {
   background-color: rgb(29, 29, 29);
-  height: 85px;
+  height: 70px;
   width: 100vw;
   position: fixed;
   top: -450px;
   left: 0;
   transition: 0.3s ease;
-  border-bottom: 3px inset;
+  border-bottom: 2px inset;
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
 }
 
 .off-screen-menu ul {
-  padding-top: 12px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -183,13 +183,13 @@
   list-style: none;
   padding: 10px;
   font-family: SpiegelSans, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .off-screen-menu a {
   text-decoration: none;
   color: var(--thertiary-color);
-  font-family: BeaufortforLOL, sans-serif;
+  font-family: SpiegelSans, sans-serif;
 }
 
 .off-screen-menu.active {
@@ -203,8 +203,9 @@ nav {
 }
 
 .ham-menu {
-  height: 50px;
-  width: 40px;
+  top: -3px;
+  height: 45px;
+  width: 34px;
   margin-left: auto;
   position: relative;
 }
@@ -212,7 +213,7 @@ nav {
 .ham-menu span {
   height: 5px;
   width: 100%;
-  background-color: var(--secondary-color);
+  background: linear-gradient(to right, #c99b4b, #dfb46b, #c48b28, #cf9125bb);
   border-radius: 25px;
   position: absolute;
   left: 50%;
