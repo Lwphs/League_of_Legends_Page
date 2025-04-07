@@ -7,6 +7,16 @@ const login = document.getElementById("login");
 const usersListSection = document.getElementById("users-list");
 const userList = document.getElementById("userList");
 
+const button = document.getElementById("send");
+
+button.addEventListener("mouseenter", function (event) {
+    button.innerHTML = `<img src="assets/arrow_RED.svg" alt="">`
+});
+
+button.addEventListener("mouseleave", function (event) {
+    button.innerHTML = `<img src="assets/arrow_WHITE.svg" alt="">`
+});
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();  
 
@@ -55,3 +65,4 @@ function fetchUsers() {
             console.error("Error fetching users:", error);
         });
 }
+
