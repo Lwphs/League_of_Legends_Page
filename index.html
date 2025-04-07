@@ -8,6 +8,7 @@
     <script src="script.js" defer></script>
     <script src="burger.js" defer></script>
     <script src="logoChanger.js" defer></script>
+    <script src="submit.js" defer></script>
   </head>
 
   <body>
@@ -89,9 +90,16 @@
       <form id="form">
         <input type="email" id="email" name="email" required placeholder="Username" />
         <input type="password" id="passwd" name="passwd" required placeholder="Password"/>
-        <button type="submit" ><img src="assets/arrow_RED.svg" alt=""></button>
+        <p id="invalido">Your password must contain at least 8 characters, uppercase and a number!</p>
+        <button id="send" type="submit"><img src="assets/arrow_RED.svg" alt=""></button>
       </form>
     </section>
+    
+    <section id="users-list">
+      <h2>Users List</h2>
+      <ul id="userList"></ul>
+    </section>
+  
     <footer id="footer">
       <h2>Footer</h2>
     </footer>
