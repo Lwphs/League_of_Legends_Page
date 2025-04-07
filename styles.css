@@ -7,9 +7,9 @@
 }
 
 :root {
-  --primary-color: rgb(0, 0, 0);
-  --secondary-color: rgb(236, 173, 0);
-  --thertiary-color: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --gold: rgb(236, 173, 0);
+  --white: rgb(255, 255, 255);
   --accent-color: rgb(194, 23, 23);
   --footer: #313131;
 }
@@ -40,7 +40,7 @@
 #hero {
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
-  color: white;
+  color: var(--white);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@
 
 #hero p {
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: var(--gold);
   margin-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@
   right: 0;
   background-color: rgb(0, 0, 0);
   font-family: SpiegelSans, sans-serif;
-  color: white;
+  color: var(--white);
   padding: 30px 40px 40px 20px;
   border-top: 1px solid #ccc;
   justify-content: space-between;
@@ -108,12 +108,12 @@
 
 #muchoTexto a:link {
   font-family: SpiegelSans, sans-serif;
-  color: white;
+  color: var(--white);
 }
 
 #muchoTexto a:visited {
   font-family: SpiegelSans, sans-serif;
-  color: white;
+  color: var(--white);
 }
 
 .buttons {
@@ -131,7 +131,7 @@
   right: 0;
   background-color: rgb(0, 0, 0);
   font-family: SpiegelSans, sans-serif;
-  color: white;
+  color: var(--white);
   padding: 20px;
   border-top: 1px solid #ccc;
   justify-content: center;
@@ -141,7 +141,7 @@
 
 .buttons button {
   background-color: rgb(194, 23, 23);
-  color: var(--thertiary-color);
+  color: var(--white);
   border: none;
   padding: 10px 10px;
   border-radius: 5px;
@@ -150,8 +150,8 @@
 
 .buttons button:hover {
   transition: ease-in-out 0.2s;
-  background-color: var(--thertiary-color);
-  color: var(--primary-color);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 #toHell {
@@ -164,18 +164,18 @@
   width: 200px;
   height: 70px;
   padding: 20px;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--black);
   border: 3px inset;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
 }
 
 #toHell a:link {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 #toHell a:visited {
-  color: white;
+  color: var(--white);
 }
 
 #toHell:hover {
@@ -204,7 +204,7 @@
   grid-template-columns: 150px 7fr 1fr;
   justify-content: space-evenly;
   align-items: center;
-  color: white;
+  color: var(--white);
 }
 
 .logo-container {
@@ -243,7 +243,7 @@
 
 .off-screen-menu a {
   text-decoration: none;
-  color: var(--thertiary-color);
+  color: var(--white);
   font-family: SpiegelSans, sans-serif;
 }
 
@@ -256,8 +256,14 @@
   width: 100px;
   background-color: var(--accent-color);
   font-weight: 750;
-  color: white;
+  color: var(--white);
   cursor: pointer;
+}
+
+#signIn:hover {
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .off-screen-menu a:hover {
@@ -310,7 +316,7 @@ nav {
 }
 
 .ham-menu.active span {
-  background-color: var(--secondary-color);
+  background-color: var(--gold);
 }
 .ham-menu.active span:nth-child(1) {
   top: 50%;
@@ -347,10 +353,10 @@ nav {
   width: 30vw;
   max-width: 500px;
   max-height: 500px;
-  background-color: var(--primary-color);
+  background-color: var(--black);
   border: 3px inset;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
-  color: white;
+  color: var(--white);
   box-shadow: 0 0 10px 5px #0000008a;
   opacity: 0; 
   visibility: hidden; 
@@ -398,7 +404,7 @@ nav {
   padding: 30px;
   border: 3px solid var(--accent-color);
   border-radius: 20px;
-  background-color: black;
+  background-color: var(--black);
   justify-self: center;
   font-weight: 750;
   max-width: 80px;
@@ -420,14 +426,13 @@ nav {
 
 #form button:hover {
   transition: ease-in-out 0.2s;
-  background-color: var(--thertiary-color);
-  color: var(--primary-color);
+  background-color: var(--white);
 }
 
 #invalido {
   display: none;
   font-size: 0.8rem;
-  color: white;
+  color: var(--white);
 }
 
 #users-list {
