@@ -17,6 +17,7 @@ form.addEventListener("submit", function (event) {
     const hasUppercase = /[A-Z]/.test(password);
     const hasNum = /[0-9]/.test(password);
     const screenOpacity = document.getElementById("blackscreen");
+    const signInBtn = document.getElementById("signIn");
 
     if (hasMinLength && hasUppercase && hasNum) {
         invalido.style.display = "none"; 
@@ -24,7 +25,10 @@ form.addEventListener("submit", function (event) {
 
         if (email === "user@example.com" && password === "Pene12345") {
             fetchUsers();
-            screenOpacity.style.display = "none";     
+            screenOpacity.style.display = "none";   
+            signInBtn.innerHTML = "SIGNED IN"; 
+            signInBtn.style.backgroundColor = "Green"; 
+            signInBtn.style.pointerEvents = "None";
         } else {
             alert("Usuario o contraseña incorrectos");
         }

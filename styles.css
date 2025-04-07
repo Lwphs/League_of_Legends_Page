@@ -7,9 +7,9 @@
 }
 
 :root {
-  --black: rgb(0, 0, 0);
+  --black: rgb(7, 6, 19);
   --gold: rgb(236, 173, 0);
-  --white: rgb(255, 255, 255);
+  --white: rgb(233, 228, 224);
   --accent-color: rgb(194, 23, 23);
   --footer: #313131;
 }
@@ -60,6 +60,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 #myVideo {
@@ -189,7 +191,7 @@
 
 /*---------------HAMBURGUER HEADER------------------*/
 .off-screen-menu {
-  background-color: rgb(29, 29, 29);
+  background-color: var(--black);
   height: 60px;
   width: 100vw;
   position: fixed;
