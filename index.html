@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="burger.js" defer></script>
+    <script src="logoChanger.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
-  <script src="burger.js" defer></script>
-  <script src="logoChanger.js" defer></script>
-</head>
+  <body>
+    <div class="off-screen-menu">
+      <div class="logo-container">
+        <img
+          src="assets/riot-games-rgb-logos-web/002_RG_2021_FULL_LOCKUP_OFFWHITE.png"
+          alt="Logo"
+          class="logo"
+          id="logo"
+        />
+      </div>
 
-<body>
-  <div class="off-screen-menu">
-    <div class="logo-container">
-      <img src="assets/riot-games-rgb-logos-web/002_RG_2021_FULL_LOCKUP_OFFWHITE.png" alt="Logo" class="logo" id="logo">
+      <ul>
+        <li><a href="#hero">HERO</a></li>
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#footer">FOOTER</a></li>
+      </ul>
+      <button id="signIn">SIGN IN</button>
     </div>
 
-    <ul>
-      <li><a href="#hero">HERO</a></li>
-      <li><a href="#info">INFO</a></li>
-      <li><a href="#footer">FOOTER</a></li>
-    </ul>
-    <button id="signIn">SIGN IN</button>
-  </div>
+    <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
-  <nav>
-    <div class="ham-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
+    <div class="cookieModal">
+      <div class="modalContent">
+        <p id="muchoTexto">
+          This website uses technologies such as cookies to enhance your
+          browsing experience, provide essential site functionality, and gather
+          information for analytics, personalization, and targeted advertising.
+          These technologies help us understand how users interact with our
+          site, allowing us to improve performance and deliver relevant content
+          and offers. <br />
 
-  <div class="cookieModal">
-    <div class="modalContent">
-      <p id="muchoTexto">
-        This website uses technologies such as cookies to enhance your browsing experience, provide essential site
-        functionality, and gather information for analytics, personalization, and targeted advertising. These
-        technologies help us understand how users interact with our site, allowing us to improve performance and deliver
-        relevant content and offers. <br>
-
-        By continuing to browse or by clicking "Accept," you consent to the use of these technologies. If you prefer,
-        you can adjust your cookie preferences at any time through the settings menu. Choosing to limit certain types of
-        cookies may impact your experience on the site, but essential cookies will remain active to ensure basic
-        functionality. <a href="https://www.riotgames.com/en/privacy-notice">Privacy Notice</a>
-      </p>
-      <div class="buttons">
-        <button id="acceptCookies">Accept</button>
-        <button id="rejectCookies">Reject</button>
+          By continuing to browse or by clicking "Accept," you consent to the
+          use of these technologies. If you prefer, you can adjust your cookie
+          preferences at any time through the settings menu. Choosing to limit
+          certain types of cookies may impact your experience on the site, but
+          essential cookies will remain active to ensure basic functionality.
+          <a href="https://www.riotgames.com/en/privacy-notice"
+            >Privacy Notice</a
+          >
+        </p>
+        <div class="buttons">
+          <button id="acceptCookies">Accept</button>
+          <button id="rejectCookies">Reject</button>
+        </div>
       </div>
     </div>
-  </div>
+    <p id="cookieRejectMessage">
+      You have rejected cookies. Some features may not work properly.
+    </p>
 
-  <p id="cookieRejectMessage">
-    You have rejected cookies. Some features may not work properly.
-  </p>
+    <section id="hero">
+      <video autoplay muted loop id="myVideo">
+        <source src="/assets/videoplayback.mp4" type="video/mp4" />
+      </video>
 
-  <section id="hero">
-    <video autoplay muted loop id="myVideo">
-      <source src="/assets/videoplayback.mp4" type="video/mp4" />
-    </video>
+      <h1>WELCOME TO THE SUMMONERS' RIFT</h1>
+      <p>PICK YOUR CHAMPION AND SHOW YOUR SKILLS</p>
+      <div id="toHell">
+        <a
+          href="https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe"
+          >PLAY NOW</a
+        >
+      </div>
+    </section>
+    <section id="info">
+      <h2>Info</h2>
+    </section>
 
-    <h1>WELCOME TO THE SUMMONERS' RIFT</h1>
-    <p>PICK YOUR CHAMPION AND SHOW YOUR SKILLS</p>
-    <div id="toHell">
-      <a href="https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe">PLAY NOW</a>
-    </div>
-  </section>
-  <section id="info">
-    <h2>Info</h2>
-  </section>
-
-  <footer id="footer">
-    <h2>Footer</h2>
-  </footer>
-</body>
-
+    <section>
+      <h2>form</h2>
+      <form id="form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="passwd">Password:</label>
+        <input type="password" id="passwd" name="passwd" required />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <footer id="footer">
+      <h2>Footer</h2>
+    </footer>
+  </body>
 </html>
