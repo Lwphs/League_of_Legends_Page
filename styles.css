@@ -14,6 +14,19 @@
   --footer: #313131;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #blackscreen {
   display: none;
   background-color: #3131317c;
@@ -197,7 +210,7 @@
   position: fixed;
   top: -450px;
   left: 0;
-  transition: 0.3s ease;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-bottom: 2px inset;
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
   display: grid;
@@ -268,7 +281,7 @@
   color: var(--black);
 }
 
-.off-screen-menu a:hover {
+.off-screen-menu ul a:hover {
   transition: 0.3s ease;
   color: var(--accent-color);
   padding-bottom: 3px;
@@ -345,7 +358,7 @@ nav {
   position: fixed;
   top: 50vh;
   left: 50vw;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   display: block; 
   flex-direction: column;
   align-items: center;
@@ -362,13 +375,14 @@ nav {
   box-shadow: 0 0 10px 5px #0000008a;
   opacity: 0; 
   visibility: hidden; 
-  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; 
+  transition: opacity 0.75s ease-in-out, visibility 0s 0.5s; 
 }
 
 #login.show {
   opacity: 1; 
   visibility: visible; 
-  transition: opacity 0.5s ease-in-out, visibility 0s 0s; 
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.5s ease-in-out, visibility 0s 0s, transform 1s ease-in-out; 
 }
 
 
