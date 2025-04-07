@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: BeaufortforLOL, sans-serif;
 }
 
 :root {
@@ -28,7 +29,6 @@
 }
 
 #hero {
-  font-family: BeaufortforLOL, sans-serif;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
   color: white;
@@ -145,7 +145,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: BeaufortforLOL, sans-serif;
   letter-spacing: 1.5px;
   text-shadow: none;
   font-size: 1.1rem;
@@ -323,4 +322,23 @@ nav {
   border: 3px inset;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
   color: white;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+#form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+#form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #f5be61;
 }
