@@ -1,13 +1,13 @@
 let passwordInput = document.getElementById("passwd");
 let emailInput = document.getElementById("email");
-const invalido = document.getElementById("invalido");
-const form = document.getElementById("form");  
-const login = document.getElementById("login");
+let invalido = document.getElementById("invalido");
+let form = document.getElementById("form");  
+let login = document.getElementById("login");
 
 const usersListSection = document.getElementById("users-list");
 const userList = document.getElementById("userList");
 
-const button = document.getElementById("send");
+let button = document.getElementById("send");
 
 button.addEventListener("mouseenter", function (event) {
     button.innerHTML = `<img src="assets/arrow_RED.svg" alt="">`
@@ -20,20 +20,20 @@ button.addEventListener("mouseleave", function (event) {
 form.addEventListener("submit", function (event) {
     event.preventDefault();  
 
-    const email = emailInput.value;
-    const password = passwordInput.value;
-
-    const hasMinLength = password.length > 8;
-    const hasUppercase = /[A-Z]/.test(password);
-    const hasNum = /[0-9]/.test(password);
+    let formData = new FormData(form);  
+    let data = Object.fromEntries(formData);
     const screenOpacity = document.getElementById("blackscreen");
-    const signInBtn = document.getElementById("signIn");
+    let signInBtn = document.getElementById("signIn");
 
-    if (hasMinLength && hasUppercase && hasNum) {
+    let validLength = data.passwd.length >= 8;
+    let hasUppercase = /[A-Z]/.test(data.passwd);
+    let hasNumber = /[0-9]/.test(data.passwd);
+
+    if (validLength && hasUppercase && hasNumber) {
         invalido.style.display = "none"; 
         login.style.display = "none";
 
-        if (email === "user@example.com" && password === "Pene12345") {
+        if (data.email === "user@example.com" && data.passwd === "Pene12345") {
             fetchUsers();
             screenOpacity.style.display = "none";   
             signInBtn.innerHTML = "SIGNED IN"; 
@@ -41,12 +41,14 @@ form.addEventListener("submit", function (event) {
             signInBtn.style.pointerEvents = "None";
         } else {
             alert("Usuario o contraseña incorrectos");
+            screenOpacity.style.display = "none"; 
         }
 
     } else {
         invalido.style.display = "flex"; 
     }
 });
+
 
 function fetchUsers() {
     fetch('https://jsonplaceholder.typicode.com/users')
