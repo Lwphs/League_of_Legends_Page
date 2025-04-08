@@ -29,15 +29,13 @@ form.addEventListener("submit", function (event) {
     let hasUppercase = /[A-Z]/.test(data.passwd);
     let hasNumber = /[0-9]/.test(data.passwd);
 
-    let hasSigned = false;
-
     if (validLength && hasUppercase && hasNumber) {
         if (data.email === "user@example.com" && data.passwd === "Pene12345") {
             fetchUsers();
             screenOpacity.style.display = "none";
             signInBtn.innerHTML = "SIGNED IN";
             signInBtn.style.backgroundColor = "Green";
-            signInBtn.style.pointerEvents = "None";
+            loginSection.classList.remove("show");
         } else {
             alert("Usuario o contraseña incorrectos");
         }
@@ -45,7 +43,6 @@ form.addEventListener("submit", function (event) {
     } else {
         invalido.style.display = "flex";
     }
-
 });
 
 
