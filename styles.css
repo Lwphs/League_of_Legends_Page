@@ -499,9 +499,9 @@ nav {
   color: var(--white);
   background-color: var(--black);
   padding: 10vh;
-  font-style: italic;
   text-align: center;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .flex-container {
@@ -512,8 +512,15 @@ nav {
   gap: 30vh;
 }
 
-.flex-container p {
+.flex-container p:first-child {
+  padding-left: 10px;
+  letter-spacing: 3px;
+  
+}
+
+.flex-container p:nth-child(2) {
   font-size: 2rem;
+  font-style: italic;
 }
 
 #modes {
