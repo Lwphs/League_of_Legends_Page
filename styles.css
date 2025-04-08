@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: BeaufortforLOL, sans-serif;
-  cursor: url(/assets/cursor.png), auto;
+  cursor: url(/assets/cursors/cursor.png), auto;
 }
 
 :root {
@@ -14,19 +14,40 @@
   --white: rgb(233, 228, 224);
   --accent-color: rgb(194, 23, 23);
   --footer: #313131;
-  --pointer: url(/assets/cursor-pointer.png), auto;
+  --pointer: url(/assets/cursors/cursor-pointer.png), auto;
 }
 
 @font-face {
   font-family: "BeaufortforLOL";
   src: url("fonts/BeaufortforLOL-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("fonts/BeaufortforLOL-Heavy.ttf") format("truetype");
+  font-weight: 900; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("fonts/BeaufortforLOL-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("fonts/BeaufortforLOL-Regular.ttf") format("truetype");
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SpiegelSans";
-  src: url("fonts/SpiegelSans-5Regular_TRIAL.otf") format("truetype");
+  src: url("fonts/SpiegelSans-5Regular_TRIAL.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -68,6 +89,8 @@
   font-size: 1.5rem;
   color: var(--gold);
   margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 #myVideo {
@@ -169,6 +192,7 @@
   letter-spacing: 1.5px;
   text-shadow: none;
   font-size: 1.1rem;
+  font-weight: 900;
   width: 200px;
   height: 70px;
   padding: 20px;
@@ -264,7 +288,7 @@
   height: 30px;
   width: 100px;
   background-color: var(--accent-color);
-  font-weight: 750;
+  font-weight: 500;
   color: var(--white);
   cursor: var(--pointer);
 }
@@ -475,6 +499,9 @@ nav {
   color: var(--white);
   background-color: var(--black);
   padding: 10vh;
+  font-style: italic;
+  text-align: center;
+  font-weight: 700;
 }
 
 .flex-container {
@@ -483,6 +510,10 @@ nav {
   align-self: center;
   justify-self: center;
   gap: 30vh;
+}
+
+.flex-container p {
+  font-size: 2rem;
 }
 
 #modes {
