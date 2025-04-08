@@ -1,7 +1,7 @@
 let passwordInput = document.getElementById("passwd");
 let emailInput = document.getElementById("email");
 let invalido = document.getElementById("invalido");
-let form = document.getElementById("form");  
+let form = document.getElementById("form");
 let login = document.getElementById("login");
 
 const usersListSection = document.getElementById("users-list");
@@ -18,9 +18,9 @@ button.addEventListener("mouseleave", function (event) {
 });
 
 form.addEventListener("submit", function (event) {
-    event.preventDefault();  
+    event.preventDefault();
 
-    let formData = new FormData(form);  
+    let formData = new FormData(form);
     let data = Object.fromEntries(formData);
     const screenOpacity = document.getElementById("blackscreen");
     let signInBtn = document.getElementById("signIn");
@@ -29,24 +29,23 @@ form.addEventListener("submit", function (event) {
     let hasUppercase = /[A-Z]/.test(data.passwd);
     let hasNumber = /[0-9]/.test(data.passwd);
 
-    if (validLength && hasUppercase && hasNumber) {
-        invalido.style.display = "none"; 
-        login.style.display = "none";
+    let hasSigned = false;
 
+    if (validLength && hasUppercase && hasNumber) {
         if (data.email === "user@example.com" && data.passwd === "Pene12345") {
             fetchUsers();
-            screenOpacity.style.display = "none";   
-            signInBtn.innerHTML = "SIGNED IN"; 
-            signInBtn.style.backgroundColor = "Green"; 
+            screenOpacity.style.display = "none";
+            signInBtn.innerHTML = "SIGNED IN";
+            signInBtn.style.backgroundColor = "Green";
             signInBtn.style.pointerEvents = "None";
         } else {
             alert("Usuario o contraseña incorrectos");
-            screenOpacity.style.display = "none"; 
         }
 
     } else {
-        invalido.style.display = "flex"; 
+        invalido.style.display = "flex";
     }
+
 });
 
 
@@ -54,7 +53,7 @@ function fetchUsers() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => {
-            usersListSection.style.display = "block";  
+            usersListSection.style.display = "block";
             userList.innerHTML = "";
 
             users.forEach(user => {
