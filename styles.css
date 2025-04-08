@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: BeaufortforLOL, sans-serif;
+  cursor: url(/assets/cursor.png), auto;
 }
 
 :root {
@@ -13,6 +14,21 @@
   --white: rgb(233, 228, 224);
   --accent-color: rgb(194, 23, 23);
   --footer: #313131;
+  --pointer: url(/assets/cursor-pointer.png), auto;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("fonts/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpiegelSans";
+  src: url("fonts/SpiegelSans-5Regular_TRIAL.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .fade-in {
@@ -37,20 +53,6 @@
   z-index: 5;
 }
 
-@font-face {
-  font-family: "BeaufortforLOL";
-  src: url("fonts/BeaufortforLOL-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SpiegelSans";
-  src: url("fonts/SpiegelSans-5Regular_TRIAL.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 #hero {
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
@@ -66,16 +68,6 @@
   font-size: 1.5rem;
   color: var(--gold);
   margin-bottom: 20px;
-}
-
-#info {
-  height: 100vh;
-  border-top: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  background-color: var(--black);
 }
 
 #myVideo {
@@ -200,7 +192,7 @@
   background: rgb(29, 29, 29);
   transition: ease-in-out 0.2s;
   border-image: linear-gradient(to bottom, #fcdc9b, #c79948) 1;
-  cursor: pointer;
+  cursor: var(--pointer);
 }
 
 /*---------------HAMBURGUER HEADER------------------*/
@@ -238,7 +230,7 @@
   width: 100%;
   height: 100%;
   transition: opacity 0.3s ease;
-  cursor: pointer;
+  cursor: var(--pointer);
 }
 
 .off-screen-menu ul {
@@ -274,7 +266,7 @@
   background-color: var(--accent-color);
   font-weight: 750;
   color: var(--white);
-  cursor: pointer;
+  cursor: var(--pointer);
 }
 
 #signIn:hover {
@@ -295,6 +287,7 @@
 }
 
 nav {
+  z-index: 4;
   position: fixed;
   padding: 1rem;
   display: flex;
@@ -306,7 +299,7 @@ nav {
   width: 34px;
   margin-left: auto;
   position: relative;
-  cursor: pointer;
+  cursor: var(--pointer);
 }
 
 .ham-menu span {
@@ -334,6 +327,7 @@ nav {
 
 .ham-menu.active span {
   background-color: var(--gold);
+  cursor: var(--pointer);
 }
 .ham-menu.active span:nth-child(1) {
   top: 50%;
@@ -393,11 +387,14 @@ nav {
   position: absolute;
   right: 30px;
   top: 30px;
-  height: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #closeBtn:hover {
-  cursor: pointer;
+  cursor: var(--pointer);
+  color: rgb(219, 28, 28);
+  transition: 2s;
 } 
 
 #logTitle {
@@ -442,7 +439,7 @@ nav {
   text-align: center;
   max-height: 80px;
   min-width: 80px;
-  cursor: pointer;
+  cursor: var(--pointer);
   grid-row: 4 / span 1;
   position: relative;
   top: -20px;
@@ -468,4 +465,32 @@ nav {
 
 #users-list {
   display: none;
+}
+
+/*------------INFO--------------*/
+#info {
+  height: 100vh;
+  border-top: 1px solid #ccc;
+  display: flex;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 10vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  gap: 30vh;
+}
+
+#modes {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+#modes img {
+  height: 50px;
 }

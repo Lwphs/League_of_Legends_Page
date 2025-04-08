@@ -14,10 +14,10 @@ closeBtn.addEventListener("click", function () {
     screenOpacity.style.display = "none"; 
 });
 
-closeBtn.addEventListener("mouseenter", function () {
-    closeBtn.src = "assets/closeBtn_hover.svg"
-});
+// closeBtn.addEventListener("mouseenter", function () {
+//     closeBtn.src = "assets/closeBtn_hover.svg"
+// });
 
-closeBtn.addEventListener("mouseleave", function () {
-    closeBtn.src = "assets/closeBtn.svg"
-});
+// closeBtn.addEventListener("mouseleave", function () {
+//     closeBtn.src = "assets/closeBtn.svg"
+// });
