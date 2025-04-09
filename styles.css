@@ -538,13 +538,20 @@ nav {
 
 .flex-container p:first-child {
   padding-left: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
+  font-size: 2rem;
 
 }
 
 .flex-container p:nth-child(2) {
-  font-size: 2rem;
+  font-size: 3.6rem;
   font-style: italic;
+  color: var(--gold);
+}
+
+.separator {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 #modes {
