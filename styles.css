@@ -529,10 +529,11 @@ nav {
 .flex-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-self: center;
   justify-self: center;
-  gap: 20vh;
   width: 45%;
+  padding: 0 5vw;
 }
 
 .flex-container p:first-child {
@@ -548,7 +549,7 @@ nav {
 
 #modes {
   display: flex;
-  gap: 50px;
+  gap: 5vw;
   list-style: none;
   justify-content: center;
 }
