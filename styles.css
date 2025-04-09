@@ -10,7 +10,7 @@
 .roboto-custom {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; 
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100,
@@ -37,7 +37,7 @@
 @font-face {
   font-family: "BeaufortforLOL";
   src: url("fonts/BeaufortforLOL-Heavy.ttf") format("truetype");
-  font-weight: 900; 
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -383,7 +383,7 @@ nav {
   top: 50vh;
   left: 50vw;
   transform: translate(-50%, -40%);
-  display: block; 
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -398,16 +398,16 @@ nav {
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
   color: var(--white);
   box-shadow: 0 0 10px 5px #0000008a;
-  opacity: 0; 
-  visibility: hidden; 
-  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s, transform 0.5s ease-in-out; 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s, transform 0.5s ease-in-out;
 }
 
 #login.show {
-  opacity: 1; 
-  visibility: visible; 
+  opacity: 1;
+  visibility: visible;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 0.5s ease-in-out, visibility 0s 0s, transform 1s ease-in-out; 
+  transition: opacity 0.5s ease-in-out, visibility 0s 0s, transform 1s ease-in-out;
   display: flex;
 }
 
@@ -423,7 +423,7 @@ nav {
   cursor: var(--pointer);
   color: rgb(219, 28, 28);
   transition: 2s;
-} 
+}
 
 #logTitle {
   padding-top: 100px;
@@ -506,7 +506,7 @@ nav {
   text-align: center;
   font-weight: 700;
   font-size: 1.3rem;
-  gap: 5vw;
+  gap: 15%;
 }
 
 .flex-container {
@@ -515,12 +515,13 @@ nav {
   align-self: center;
   justify-self: center;
   gap: 20vh;
+  width: 45%;
 }
 
 .flex-container p:first-child {
   padding-left: 10px;
   letter-spacing: 3px;
-  
+
 }
 
 .flex-container p:nth-child(2) {
@@ -537,27 +538,34 @@ nav {
 
 #modes img {
   height: 50px;
+  filter: grayscale(80%);
+}
+
+#modes img:hover {
+  transition: ease-in-out 0.3s;
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 #videos {
-  width: min(70vw, 70vh); 
-  height: min(70vw, 70vh);
-  border-radius: 50%;       
-  overflow: hidden;     
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
   border: 1px solid var(--white);
   position: relative;
-  margin: 0 auto; 
-  align-self: center;         
+  align-self: center;
+  justify-self: center;
+  aspect-ratio: 1;
 }
 
 #bgvideo {
   width: 100%;
   height: 100%;
-  object-fit: cover;       
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; 
+  z-index: 1;
 }
 
 
