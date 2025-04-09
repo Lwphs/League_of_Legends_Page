@@ -554,6 +554,7 @@ nav {
   margin-bottom: 10vh;
 }
 
+
 #modes {
   display: flex;
   gap: 5vw;
@@ -576,6 +577,7 @@ nav {
   width: 50%;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0px 10px 10px 0px var(--black);
   position: relative;
   align-self: center;
   justify-self: center;
