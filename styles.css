@@ -563,20 +563,19 @@ nav {
 
 #modes img {
   height: 50px;
-  filter: grayscale(80%);
+  filter: grayscale(100%);
+  transition: ease-in-out 0.3s;
 }
 
 #modes img:hover {
-  transition: ease-in-out 0.3s;
   filter: grayscale(0);
-  transform: scale(1.1);
+  transform: scale(1.4);
 }
 
 #videos {
   width: 50%;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid var(--white);
   position: relative;
   align-self: center;
   justify-self: center;
