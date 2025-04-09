@@ -1,164 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="/scripts/script.js" defer></script>
-    <script src="scripts/burger.js" defer></script>
-    <script src="scripts/logoChanger.js" defer></script>
-    <script src="scripts/submit.js" defer></script>
-    <script src="scripts/signIn.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section id="blackscreen"></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/scripts/script.js" defer></script>
+  <script src="scripts/burger.js" defer></script>
+  <script src="scripts/logoChanger.js" defer></script>
+  <script src="scripts/submit.js" defer></script>
+  <script src="scripts/signIn.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <header class="off-screen-menu">
-      <a
-        href="https://www.riotgames.com/es"
-        target="_blank"
-        class="logo-container"
-      >
-        <img
-          src="assets/riot-games-rgb-logos-web/002_RG_2021_FULL_LOCKUP_OFFWHITE.png"
-          alt="Logo"
-          class="logo"
-          id="logo"
-        />
-      </a>
+<body>
+  <section id="blackscreen"></section>
 
-      <ul>
-        <li><a href="#hero">HERO</a></li>
-        <li><a href="#info">INFO</a></li>
-        <li><a href="#footer">FOOTER</a></li>
-      </ul>
-      <button id="signIn">SIGN IN</button>
-    </header>
+  <header class="off-screen-menu">
+    <a href="https://www.riotgames.com/es" target="_blank" class="logo-container">
+      <img src="assets/riot-games-rgb-logos-web/002_RG_2021_FULL_LOCKUP_OFFWHITE.png" alt="Logo" class="logo"
+        id="logo" />
+    </a>
 
-    <nav>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
+    <ul>
+      <li><a href="#hero">HERO</a></li>
+      <li><a href="#info">INFO</a></li>
+      <li><a href="#footer">FOOTER</a></li>
+    </ul>
+    <button id="signIn">SIGN IN</button>
+  </header>
 
-    <div class="cookieModal">
-      <div class="modalContent">
-        <p id="muchoTexto">
-          This website uses technologies such as cookies to enhance your
-          browsing experience, provide essential site functionality, and gather
-          information for analytics, personalization, and targeted advertising.
-          These technologies help us understand how users interact with our
-          site, allowing us to improve performance and deliver relevant content
-          and offers. <br />
+  <nav>
+    <div class="ham-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-          By continuing to browse or by clicking "Accept," you consent to the
-          use of these technologies. If you prefer, you can adjust your cookie
-          preferences at any time through the settings menu. Choosing to limit
-          certain types of cookies may impact your experience on the site, but
-          essential cookies will remain active to ensure basic functionality.
-          <a href="https://www.riotgames.com/en/privacy-notice" target="_blank"
-            >Privacy Notice</a
-          >
-        </p>
-        <div class="buttons">
-          <button id="acceptCookies">Accept</button>
-          <button id="rejectCookies">Reject</button>
-        </div>
+  <div class="cookieModal">
+    <div class="modalContent">
+      <p id="muchoTexto">
+        This website uses technologies such as cookies to enhance your
+        browsing experience, provide essential site functionality, and gather
+        information for analytics, personalization, and targeted advertising.
+        These technologies help us understand how users interact with our
+        site, allowing us to improve performance and deliver relevant content
+        and offers. <br />
+
+        By continuing to browse or by clicking "Accept," you consent to the
+        use of these technologies. If you prefer, you can adjust your cookie
+        preferences at any time through the settings menu. Choosing to limit
+        certain types of cookies may impact your experience on the site, but
+        essential cookies will remain active to ensure basic functionality.
+        <a href="https://www.riotgames.com/en/privacy-notice" target="_blank">Privacy Notice</a>
+      </p>
+      <div class="buttons">
+        <button id="acceptCookies">Accept</button>
+        <button id="rejectCookies">Reject</button>
       </div>
     </div>
-    <p id="cookieRejectMessage">
-      You have rejected cookies. Some features may not work properly.
-    </p>
+  </div>
+  <p id="cookieRejectMessage">
+    You have rejected cookies. Some features may not work properly.
+  </p>
 
-    <section id="hero">
-      <video autoplay muted loop id="myVideo">
-        <source src="/assets/videos/videoplayback.mp4" type="video/mp4" />
+  <section id="hero">
+    <video autoplay muted loop id="myVideo">
+      <source src="/assets/videos/videoplayback.mp4" type="video/mp4" loading="lazy" />
+    </video>
+
+    <h1 class="fade-in">WELCOME TO THE SUMMONERS' RIFT</h1>
+    <p class="fade-in">PICK YOUR CHAMPION AND SHOW YOUR SKILLS</p>
+    <div id="toHell" class="fade-in">
+      <a href="https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe">PLAY NOW</a>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="flex-container">
+      <div class="fade-in">
+        <p>PLAY DIFFERENT</p>
+        <p>GAME MODES</p>
+      </div>
+      <img class="separator" src="assets/decorator-hr-lg.png" alt="" loading="lazy">
+      <ul id="modes">
+        <li><img src="assets/game_modes/ARAM.webp" alt="" loading="lazy" /></li>
+        <li><img src="assets/game_modes/rift.webp" alt="" loading="lazy" /></li>
+        <li><img src="assets/game_modes/ARENA.webp" alt="" loading="lazy" /></li>
+      </ul>
+    </div>
+
+    <div id="videos" class="fade-in">
+      <video autoplay muted loop id="bgvideo" loading="lazy">
+        <source src="/assets/videos/RiftDemo.mp4" type="video/mp4" />
       </video>
+    </div>
+  </section>
 
-      <h1 class="fade-in">WELCOME TO THE SUMMONERS' RIFT</h1>
-      <p class="fade-in">PICK YOUR CHAMPION AND SHOW YOUR SKILLS</p>
-      <div id="toHell" class="fade-in">
-        <a
-          href="https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe"
-          >PLAY NOW</a
-        >
-      </div>
-    </section>
-    <section id="info">
-      <div class="flex-container">
-        <div>
-          <p>PLAY DIFFERENT</p>
-          <p>GAME MODES</p>
-        </div>
-        <ul id="modes">
-          <li><img src="assets/game_modes/ARAM.webp" alt="" /></li>
-          <li><img src="assets/game_modes/rift.webp" alt="" /></li>
-          <li><img src="assets/game_modes/ARENA.webp" alt="" /></li>
-        </ul>
-      </div>
+  <section id="login">
+    <svg id="closeBtn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 590.265 511.987 l 305.521 -305.468 c 21.617 -21.589 21.617 -56.636 0.027 -78.252 c -21.616 -21.617 -56.663 -21.617 -78.279 0 L 512.012 433.735 L 206.544 128.213 c -21.617 -21.617 -56.635 -21.617 -78.252 0 c -21.616 21.589 -21.616 56.635 -0.027 78.252 L 433.76 511.987 L 128.211 817.482 c -21.617 21.59 -21.617 56.635 0 78.251 c 10.808 10.81 24.967 16.213 39.125 16.213 c 14.159 0 28.318 -5.403 39.126 -16.213 l 305.522 -305.468 L 817.48 895.788 C 828.289 906.597 842.447 912 856.606 912 s 28.317 -5.403 39.125 -16.212 c 21.618 -21.59 21.618 -56.636 0.028 -78.252 L 590.265 511.987 Z"
+        fill="currentColor" />
+    </svg>
+    <h2 id="logTitle">SIGN IN</h2>
+    <form id="form">
+      <input type="email" id="email" name="email" required placeholder="Username" />
+      <input type="password" id="passwd" name="passwd" required placeholder="Password" />
+      <p id="invalido">
+        Your password must contain at least 8 characters, uppercase and a
+        number!
+      </p>
+      <button id="send" type="submit">
+        <img src="assets/arrow_WHITE.svg" alt="" />
+      </button>
+    </form>
+  </section>
 
-      <div id="videos">
-        <video autoplay muted loop id="bgvideo">
-          <source src="/assets/videos/RiftDemo.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </section>
+  <section id="users-list">
+    <h2>Users List</h2>
+    <ul id="userList"></ul>
+  </section>
 
-    <section id="login">
-      <svg
-        id="closeBtn"
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M 590.265 511.987 l 305.521 -305.468 c 21.617 -21.589 21.617 -56.636 0.027 -78.252 c -21.616 -21.617 -56.663 -21.617 -78.279 0 L 512.012 433.735 L 206.544 128.213 c -21.617 -21.617 -56.635 -21.617 -78.252 0 c -21.616 21.589 -21.616 56.635 -0.027 78.252 L 433.76 511.987 L 128.211 817.482 c -21.617 21.59 -21.617 56.635 0 78.251 c 10.808 10.81 24.967 16.213 39.125 16.213 c 14.159 0 28.318 -5.403 39.126 -16.213 l 305.522 -305.468 L 817.48 895.788 C 828.289 906.597 842.447 912 856.606 912 s 28.317 -5.403 39.125 -16.212 c 21.618 -21.59 21.618 -56.636 0.028 -78.252 L 590.265 511.987 Z"
-          fill="currentColor"
-        />
-      </svg>
-      <h2 id="logTitle">SIGN IN</h2>
-      <form id="form">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Username"
-        />
-        <input
-          type="password"
-          id="passwd"
-          name="passwd"
-          required
-          placeholder="Password"
-        />
-        <p id="invalido">
-          Your password must contain at least 8 characters, uppercase and a
-          number!
-        </p>
-        <button id="send" type="submit">
-          <img src="assets/arrow_WHITE.svg" alt="" />
-        </button>
-      </form>
-    </section>
+  <footer id="footer">
+    <h2>Footer</h2>
+  </footer>
+</body>
 
-    <section id="users-list">
-      <h2>Users List</h2>
-      <ul id="userList"></ul>
-    </section>
-
-    <footer id="footer">
-      <h2>Footer</h2>
-    </footer>
-  </body>
 </html>
