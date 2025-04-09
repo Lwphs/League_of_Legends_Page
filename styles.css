@@ -565,12 +565,7 @@ nav {
 #modes img {
   height: 50px;
   filter: grayscale(100%);
-  transition: ease-in-out 0.3s;
-}
-
-#modes img:hover {
-  filter: grayscale(0);
-  transform: scale(1.4);
+  transition: ease-out 0.2s;
 }
 
 #videos {
