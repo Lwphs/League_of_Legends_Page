@@ -9,7 +9,11 @@ const aram = "assets/videos/aramDemo.mp4";
 const rift = "assets/videos/riftDemo.mp4";
 const arena = "assets/videos/arenaDemo.mp4";
 
-const modes = document.getElementById("modes");
+const aramBg = "assets/AramBg.jpg";
+const riftBg = "assets/riftBg.jpg";
+const arenaBg = "assets/ArenaBg.jpg";
+
+const bgImage = document.getElementById("info");
 
 window.addEventListener("load", function () {
     const img2 = item2.querySelector("img");
