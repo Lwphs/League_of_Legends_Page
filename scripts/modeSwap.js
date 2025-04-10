@@ -11,6 +11,12 @@ const arena = "assets/videos/arenaDemo.mp4";
 
 const modes = document.getElementById("modes");
 
+window.addEventListener("load", function () {
+    const img2 = item2.querySelector("img");
+    img2.style.filter = "grayscale(0)";
+    img2.style.transform = "scale(1.4)";
+});
+
 item1.addEventListener("click", function () {
     const img1 = item1.querySelector("img");
     img1.style.filter = "grayscale(0)";
