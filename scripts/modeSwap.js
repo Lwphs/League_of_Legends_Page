@@ -19,56 +19,63 @@ window.addEventListener("load", function () {
 
 item1.addEventListener("click", function () {
     const img1 = item1.querySelector("img");
-    img1.style.filter = "grayscale(0)";
-    img1.style.transform = "scale(1.4)";
 
-    const img2 = item2.querySelector("img");
-    img2.style.filter = "grayscale(100%)";
-    img2.style.transform = "scale(1)";
+    if (img1.style.transform !== "scale(1.4)") {
+        img1.style.filter = "grayscale(0)";
+        img1.style.transform = "scale(1.4)";
 
-    const img3 = item3.querySelector("img");
-    img3.style.filter = "grayscale(100%)";
-    img3.style.transform = "scale(1)";
+        const img2 = item2.querySelector("img");
+        img2.style.filter = "grayscale(100%)";
+        img2.style.transform = "scale(1)";
 
-    videoSource.src = aram;
-    bgVideo.load();
-    bgVideo.play();
+        const img3 = item3.querySelector("img");
+        img3.style.filter = "grayscale(100%)";
+        img3.style.transform = "scale(1)";
+
+        videoSource.src = aram;
+        bgVideo.load();
+        bgVideo.play();
+    }
 });
 
 item2.addEventListener("click", function () {
-    const img1 = item1.querySelector("img");
-    img1.style.filter = "grayscale(100%)";
-    img1.style.transform = "scale(1)";
-
     const img2 = item2.querySelector("img");
-    img2.style.filter = "grayscale(0)";
-    img2.style.transform = "scale(1.4)";
 
-    const img3 = item3.querySelector("img");
-    img3.style.filter = "grayscale(100%)";
-    img3.style.transform = "scale(1)";
+    if (img2.style.transform !== "scale(1.4)") {
+        const img1 = item1.querySelector("img");
+        img1.style.filter = "grayscale(100%)";
+        img1.style.transform = "scale(1)";
 
-    videoSource.src = rift;
-    bgVideo.load();
-    bgVideo.play();
+        img2.style.filter = "grayscale(0)";
+        img2.style.transform = "scale(1.4)";
+
+        const img3 = item3.querySelector("img");
+        img3.style.filter = "grayscale(100%)";
+        img3.style.transform = "scale(1)";
+
+        videoSource.src = rift;
+        bgVideo.load();
+        bgVideo.play();
+    }
 });
 
 item3.addEventListener("click", function () {
-    const img1 = item1.querySelector("img");
-    img1.style.filter = "grayscale(100%)";
-    img1.style.transform = "scale(1)";
-
-    const img2 = item2.querySelector("img");
-    img2.style.filter = "grayscale(100%)";
-    img2.style.transform = "scale(1)";
-
     const img3 = item3.querySelector("img");
-    img3.style.filter = "grayscale(0)";
-    img3.style.transform = "scale(1.4)";
 
-    videoSource.src = arena;
-    bgVideo.load();
-    bgVideo.play();
+    if (img3.style.transform !== "scale(1.4)") {
+        const img1 = item1.querySelector("img");
+        img1.style.filter = "grayscale(100%)";
+        img1.style.transform = "scale(1)";
+
+        const img2 = item2.querySelector("img");
+        img2.style.filter = "grayscale(100%)";
+        img2.style.transform = "scale(1)";
+
+        img3.style.filter = "grayscale(0)";
+        img3.style.transform = "scale(1.4)";
+
+        videoSource.src = arena;
+        bgVideo.load();
+        bgVideo.play();
+    }
 });
-
-
