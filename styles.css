@@ -550,8 +550,8 @@ nav {
   margin-top: 5vh;
   margin-bottom: 10vh;
   max-width: 25vw;
+  filter: brightness(0.7);
 }
-
 
 #modes {
   display: flex;
@@ -562,7 +562,7 @@ nav {
 
 #modes img {
   height: 50px;
-  filter: grayscale(100%);
+  filter: grayscale(100%) saturate(0%);
   transition: ease-out 0.2s;
 }
 
@@ -570,7 +570,6 @@ nav {
   width: 50%;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0px 10px 10px 0px var(--black);
   position: relative;
   align-self: center;
   justify-self: center;
@@ -617,6 +616,7 @@ nav {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.397);
 }
 
+
 /*switch mode*/
 .toCenter {
   justify-self: center;
@@ -626,6 +626,7 @@ nav {
   opacity: 0;
   position: absolute;
 }
+
 .checkbox-label {
   background-color: var(--white);
   width: 50px;
