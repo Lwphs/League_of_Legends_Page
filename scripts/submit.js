@@ -50,7 +50,7 @@ function fetchUsers() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => {
-            usersListSection.style.display = "block";
+            usersListSection.style.display = "flex";
             userList.innerHTML = "";
 
             users.forEach(user => {
