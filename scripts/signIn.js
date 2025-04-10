@@ -13,11 +13,3 @@ closeBtn.addEventListener("click", function () {
     loginSection.classList.remove("show"); 
     screenOpacity.style.display = "none"; 
 });
-
-// closeBtn.addEventListener("mouseenter", function () {
-//     closeBtn.src = "assets/closeBtn_hover.svg"
-// });
-
-// closeBtn.addEventListener("mouseleave", function () {
-//     closeBtn.src = "assets/closeBtn.svg"
-// });
