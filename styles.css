@@ -19,13 +19,16 @@
 
 :root {
   --black: rgb(7, 6, 19);
+  --header: rgb(7, 6, 19);
   --gold: rgb(236, 173, 0);
   --dirt-gold: rgb(172, 133, 27);
   --white: rgb(233, 228, 224);
   --accent-color: rgb(194, 23, 23);
-  --footer: #313131;
+  --footer: #070914;
   --pointer: url(/assets/cursors/cursor-pointer.png), auto;
   --mode-bg: url(assets/riftBg.jpg);
+  --bg-opacity: 0.1;
+  --contrast: 5;
 }
 
 @font-face {
@@ -81,7 +84,7 @@
 #hero {
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
-  color: var(--white);
+  color: rgb(233, 228, 224);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -199,14 +202,14 @@
   width: 200px;
   height: 70px;
   padding: 20px;
-  background-color: var(--black);
+  background-color: rgb(15, 15, 17);
   border: 3px inset;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
 }
 
 #toHell a:link {
   text-decoration: none;
-  color: var(--white);
+  color: rgb(233, 228, 224);
 }
 
 #toHell a:visited {
@@ -224,7 +227,7 @@
 
 /*---------------HAMBURGUER HEADER------------------*/
 .off-screen-menu {
-  background-color: var(--black);
+  background-color: var(--header);
   height: 60px;
   width: 100vw;
   position: fixed;
@@ -235,8 +238,8 @@
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
   display: grid;
   font-weight: 750;
-  padding: 0 80px;
-  grid-template-columns: 150px 7fr 1fr;
+  padding: 0 20px 0 80px;
+  grid-template-columns: 150px 7fr 1fr 0.5fr;
   justify-content: space-evenly;
   align-items: center;
   color: var(--white);
@@ -293,7 +296,7 @@
   width: 100px;
   background-color: var(--accent-color);
   font-weight: 500;
-  color: var(--white);
+  color: rgb(233, 228, 224);
   cursor: var(--pointer);
   font-family: Roboto, sans-serif;
 }
@@ -397,7 +400,6 @@ nav {
   background-color: rgb(7, 6, 19);
   border: 3px inset;
   border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29) 1;
-  color: var(--white);
   color: rgb(233, 228, 224);
   box-shadow: 0 0 10px 5px #0000008a;
   opacity: 0;
@@ -519,7 +521,7 @@ nav {
   background-image: var(--mode-bg);
   background-size: cover;
   background-position: center;
-  opacity: 0.1;
+  opacity: var(--bg-opacity);
   z-index: -1;
 }
 
