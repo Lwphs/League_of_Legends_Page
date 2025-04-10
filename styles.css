@@ -491,10 +491,6 @@ nav {
   color: var(--accent-color);
 }
 
-#users-list {
-  display: none;
-}
-
 /*------------INFO--------------*/
 #info {
   position: relative;
@@ -589,4 +585,21 @@ nav {
   z-index: 1;
 }
 
+/*user-list*/
+
+#users-list {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  background-color: var(--black);
+  color: var(--dirt-gold);
+  font-size: 2rem;
+  border-top: 2px inset;
+  border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
+  font-style: italic;
+}
 
