@@ -25,6 +25,7 @@
   --accent-color: rgb(194, 23, 23);
   --footer: #313131;
   --pointer: url(/assets/cursors/cursor-pointer.png), auto;
+  --mode-bg: url(assets/riftBg.jpg);
 }
 
 @font-face {
@@ -514,7 +515,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("assets/summoners rift background.jpg");
+  background-image: var(--mode-bg);
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -548,6 +549,7 @@ nav {
 .separator {
   margin-top: 5vh;
   margin-bottom: 10vh;
+  max-width: 25vw;
 }
 
 
@@ -588,27 +590,26 @@ nav {
 /*user-list*/
 
 #users-list {
-  width: 100vw;
   height: 100vh;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5vh;
   background-color: var(--black);
-  color: var(--dirt-gold);
-  font-size: 2rem;
-  border-top: 2px inset;
+  color: var(--gold);
+  font-size: 3.6rem;
   border-image: linear-gradient(to right, #c8aa6d, #7a5c29) 1;
   font-style: italic;
+  font-weight: 700;
 }
 
-#users-list ul {
+#users-list ul li {
   font-family: Roboto, sans-serif;
   font-style: normal;
   text-align: center;
   list-style: none;
-  font-size: 1.5rem;
+  font-weight: lighter;
+  font-size: 1.3rem;
   color: var(--white);
 }
 
