@@ -39,6 +39,8 @@ item1.addEventListener("click", function () {
         videoSource.src = aram;
         bgVideo.load();
         bgVideo.play();
+
+        bgImage.style.setProperty('--mode-bg', `url(${aramBg})`);
     }
 });
 
@@ -60,6 +62,8 @@ item2.addEventListener("click", function () {
         videoSource.src = rift;
         bgVideo.load();
         bgVideo.play();
+
+        bgImage.style.setProperty('--mode-bg', `url(${riftBg})`);
     }
 });
 
@@ -81,5 +85,7 @@ item3.addEventListener("click", function () {
         videoSource.src = arena;
         bgVideo.load();
         bgVideo.play();
+
+        bgImage.style.setProperty('--mode-bg', `url(${arenaBg})`);
     }
 });
