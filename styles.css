@@ -603,3 +603,12 @@ nav {
   font-style: italic;
 }
 
+#users-list ul {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
