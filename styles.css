@@ -374,9 +374,22 @@ nav {
 }
 
 /*-----------------FOOTER-----------------*/
-#footer {
-  height: 15vh;
+footer {
+  
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: var(--white);
   background-color: var(--footer);
+  gap: 1vh;
+}
+
+footer p {
+  font-family: Roboto, sans-serif;
+  font-size: 0.7rem;
 }
 
 /*----------------LOGIN------------------*/
