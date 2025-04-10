@@ -253,7 +253,7 @@
   display: inline-block;
   width: 120px;
   padding-right: 40px;
-  border-right: 1px solid #fcdc9b;
+  border-right: 1px solid var(--white);
 }
 
 .logo {
