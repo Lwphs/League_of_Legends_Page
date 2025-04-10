@@ -36,6 +36,7 @@ form.addEventListener("submit", function (event) {
             signInBtn.innerHTML = "SIGNED IN";
             signInBtn.style.backgroundColor = "Green";
             loginSection.classList.remove("show");
+            signInBtn.style.pointerEvents = "none";
         } else {
             alert("Usuario o contraseña incorrectos");
         }
