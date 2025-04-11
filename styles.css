@@ -709,3 +709,20 @@ footer p {
   }
 }
 
+@media screen and (max-width: 650px) {
+  #hero {
+    padding: 5vw;
+    font-size: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
