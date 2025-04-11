@@ -755,3 +755,14 @@ footer p {
   #videos {
     width: 90%;
   }
+
+  .flex-container p:first-child {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .flex-container p:nth-child(2) {
+    font-size: 2.6rem;
+    font-style: italic;
+    text-align: center;
+  }
