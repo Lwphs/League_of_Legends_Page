@@ -684,3 +684,19 @@ footer p {
   #hero p {
     font-size: 1.2rem;
   }
+
+  .off-screen-menu ul {
+    gap: 20px;
+    margin-left: 5px;
+  }
+
+  #info {
+    padding: 5% 10% 5% 5%;
+  }
+
+  .flex-container {
+    padding: 0 2vw;
+  }
+
+  .flex-container p:first-child {
+    font-size: 1.3rem;
