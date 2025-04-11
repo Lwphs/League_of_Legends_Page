@@ -674,3 +674,13 @@ footer p {
   transform: translateX(24px);
 }
 
+/* ---- RESPONSIVE -- */
+
+@media screen and (max-width: 1200px) {
+  #hero {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
