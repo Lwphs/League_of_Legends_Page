@@ -266,7 +266,7 @@
 .off-screen-menu ul {
   margin-left: 20px;
   display: flex;
-  gap: 50px;
+  gap: 3vw;
   flex-direction: row;
   justify-content: left;
   align-items: center;
@@ -299,6 +299,7 @@
   color: rgb(233, 228, 224);
   cursor: var(--pointer);
   font-family: Roboto, sans-serif;
+  margin-right: 10px;
 }
 
 #signIn:hover {
@@ -565,8 +566,9 @@ footer p {
 .separator {
   margin-top: 5vh;
   margin-bottom: 10vh;
-  max-width: 25vw;
+  width: 25vw;
   filter: brightness(0.7);
+  align-self: center;
 }
 
 #modes {
