@@ -766,3 +766,19 @@ footer p {
     font-style: italic;
     text-align: center;
   }
+  .off-screen-menu {
+    height: 14vh;
+    top: -25vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 75px 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding :5px 20px 5px 80px;
+  }
+
+  #signIn {
+    margin: 0;
+    grid-column: 2;
+    justify-self: center;
+  }
