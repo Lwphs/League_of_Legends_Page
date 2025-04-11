@@ -782,3 +782,31 @@ footer p {
     grid-column: 2;
     justify-self: center;
   }
+
+  .off-screen-menu li {
+    padding: 0%;
+  }
+
+  #myVideo {
+    object-fit: cover;
+  }
+
+  .logo-container {
+    border-right: 0px;
+    justify-self: auto;
+  }
+
+  .logo {
+    height: auto;
+  }
+
+  .toCenter {
+    grid-column: 3;
+    justify-self: center;
+  }
+
+  .off-screen-menu ul {
+    gap: 20%;
+  }
+
+}
