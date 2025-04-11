@@ -700,3 +700,12 @@ footer p {
 
   .flex-container p:first-child {
     font-size: 1.3rem;
+  
+  }
+
+  .flex-container p:nth-child(2) {
+    font-size: 2.6rem;
+    font-style: italic;
+  }
+}
+
