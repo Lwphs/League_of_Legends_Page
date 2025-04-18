@@ -737,6 +737,12 @@ footer p {
   .flex-container {
     width: 90%;
   }
+  
+  .separator {
+    width: 70vw;
+    margin-bottom: 10%;
+  }
+
   #info {
     flex-direction: column;
     justify-content: center;
@@ -759,6 +765,7 @@ footer p {
   .flex-container p:first-child {
     font-size: 1.3rem;
     text-align: center;
+  
   }
 
   .flex-container p:nth-child(2) {
@@ -766,6 +773,7 @@ footer p {
     font-style: italic;
     text-align: center;
   }
+
   .off-screen-menu {
     height: 14vh;
     top: -25vh;
